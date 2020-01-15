@@ -1,7 +1,9 @@
 package main
 
-func swapPairs(head *ListNode) *ListNode {
-	newHead := &ListNode{0, nil}
+import "test"
+
+func swapPairs(head *test.ListNode) *test.ListNode {
+	newHead := &test.ListNode{0, nil}
 	newHead.Next = head
 	cur := newHead
 	for cur.Next != nil && cur.Next.Next != nil {

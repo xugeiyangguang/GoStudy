@@ -1,12 +1,9 @@
-package main
+package test
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import "node"
 
-func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-	head := &ListNode{0, nil}
+func mergeTwoLists(l1 *node.ListNode, l2 *node.ListNode) *node.ListNode {
+	head := &node.ListNode{0, nil}
 	cur := head
 	p := l1
 	q := l2
@@ -29,5 +26,5 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 func main() {
-	me
+
 }
