@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func maxArea(height []int) int {
 	left := 0
 	right := len(height) - 1
@@ -21,15 +19,8 @@ func maxArea(height []int) int {
 	return re
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
-func main() {
-	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	re := maxArea(height)
-	fmt.Println(re)
-}
+//func main() {
+//	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+//	re := maxArea(height)
+//	fmt.Println(re)
+//}

@@ -46,13 +46,13 @@ func invalid(part string) bool {
 	return true
 }
 
-func min(a, b int) int {
-	if a > b {
-		return b
-	} else {
-		return a
-	}
-}
+//func min(a, b int) int {
+//	if a > b {
+//		return b
+//	} else {
+//		return a
+//	}
+//}
 
 func main() {
 	re := restoreIpAddresses("0000")

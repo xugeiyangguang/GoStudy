@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func maxProfit(prices []int) int {
+func maxProfit1(prices []int) int {
 	var max int
 	maxProfitCore(prices, 0, 0, &max)
 	return max
