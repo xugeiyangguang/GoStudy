@@ -11,16 +11,16 @@ func majorityElement(nums []int) int {
 	pos := sort(nums, left, right)
 	for pos != len(nums)/2 {
 		if pos < len(nums)/2 {
-			pos = sort(nums, pos+1, right)
+			pos = sort1(nums, pos+1, right)
 		} else {
-			pos = sort(nums, left, pos-1)
+			pos = sort1(nums, left, pos-1)
 		}
 	}
 	return nums[pos]
 
 }
 
-func sort(nums []int, left, right int) int {
+func sort1(nums []int, left, right int) int {
 	key := nums[left]
 	for left < right {
 		for left < right && nums[right] >= key {
