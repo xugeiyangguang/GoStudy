@@ -1,4 +1,4 @@
-package main
+package src
 
 func countPrimes(n int) int {
 	noPrime := make([]int, n)

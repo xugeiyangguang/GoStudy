@@ -1,4 +1,4 @@
-package main
+package src
 
 func singleNumber(nums []int) int {
 	var re int

@@ -1,12 +1,12 @@
-package main
+package src
 
 import (
 	"fmt"
-	"node"
+	"unitTestExcercise"
 )
 
-func reverseBetween(head *node.ListNode, m int, n int) *node.ListNode {
-	newHead := &node.ListNode{0, nil}
+func reverseBetween(head *unitTestExcercise.node.ListNode, m int, n int) *unitTestExcercise.node.ListNode {
+	newHead := &unitTestExcercise.node.ListNode{0, nil}
 	newHead.Next = head
 	end := newHead
 	i := 0
@@ -31,11 +31,11 @@ func reverseBetween(head *node.ListNode, m int, n int) *node.ListNode {
 }
 
 func main() {
-	a1 := &node.ListNode{1, nil}
-	a2 := &node.ListNode{2, nil}
-	a3 := &node.ListNode{3, nil}
-	a4 := &node.ListNode{4, nil}
-	a5 := &node.ListNode{5, nil}
+	a1 := &unitTestExcercise.node.ListNode{1, nil}
+	a2 := &unitTestExcercise.node.ListNode{2, nil}
+	a3 := &unitTestExcercise.node.ListNode{3, nil}
+	a4 := &unitTestExcercise.node.ListNode{4, nil}
+	a5 := &unitTestExcercise.node.ListNode{5, nil}
 	a1.Next = a2
 	a2.Next = a3
 	a3.Next = a4

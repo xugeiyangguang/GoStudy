@@ -1,6 +1,9 @@
-package main
+package src
 
-import "fmt"
+import (
+	"fmt"
+	"unitTestExcercise"
+)
 
 func maxProfit1(prices []int) int {
 	var max int
@@ -29,5 +32,5 @@ func maxProfitCore(prices []int, start int, now int, max *int) {
 
 func main() {
 	a := []int{1, 11, 2, 7, 4}
-	fmt.Println(maxProfit(a))
+	fmt.Println(unitTestExcercise.maxProfit(a))
 }

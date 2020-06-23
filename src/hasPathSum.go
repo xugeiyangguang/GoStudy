@@ -1,4 +1,6 @@
-package main
+package src
+
+import "unitTestExcercise"
 
 //type TreeNode struct {
 //	Val   int
@@ -6,7 +8,7 @@ package main
 //	Right *TreeNode
 //}
 
-func hasPathSum(root *TreeNode, sum int) bool {
+func hasPathSum(root *unitTestExcercise.TreeNode, sum int) bool {
 	if sum < 0 || root == nil {
 		return false
 	}

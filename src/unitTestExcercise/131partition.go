@@ -1,6 +1,6 @@
 package unitTestExcercise
 
-func partition(s string) [][]string {
+func partition1(s string) [][]string {
 	re := [][]string{}
 	if len(s) == 0 {
 		return re

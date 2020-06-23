@@ -1,4 +1,4 @@
-package main
+package src
 
 func climbStairs(n int) int {
 	if n <= 1 {

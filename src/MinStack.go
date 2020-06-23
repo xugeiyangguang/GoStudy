@@ -1,4 +1,4 @@
-package main
+package src
 
 type MinStack struct {
 	stack    []int

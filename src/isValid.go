@@ -1,4 +1,4 @@
-package main
+package src
 
 func isValid(s string) bool {
 	stack := make([]rune, len(s))
